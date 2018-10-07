@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var myWordsArray = ["test", "testing", "testing123"];
+
+var randomNum = Math.floor((Math.random() * myWordsArray.length) + 1);
+
+var currentWord = myWordsArray[randomNum];
+
+var lettersToGuess = []
+for(var i = 0; i < currentWord.length; i++){
+  lettersToGuess[i] = currentWord[i];
+}
+ alert(lettersToGuess);
+
+     </script>
+</body>
+</html>

@@ -15,6 +15,10 @@ var yourGuess= document.getElementById("yourGuess");
 var computerGuess = enter[Math.floor(Math.random() * enter.length)];
 
 document.onkeyup = function(event){
+    win;
+    lose;
+    guessLeft;
+
    var guessValue = event.key;
     console.log('my guess: ' + guessValue);
     console.log('computer guess: '+ computerGuess);
@@ -23,7 +27,7 @@ document.onkeyup = function(event){
        win++;
        console.log(win);
        alert("You Win!");
-    
+
 }
        
    
@@ -31,8 +35,9 @@ document.onkeyup = function(event){
         lose++;
         console.log(lose);
         alert("you lose!");
+
     }
 
- 
+
 }
 
