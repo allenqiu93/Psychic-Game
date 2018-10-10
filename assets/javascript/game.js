@@ -28,16 +28,18 @@ document.onkeyup = function(event){
        console.log(win);
        alert("You Win!");
 
-}
+    }
        
    
     else {
         lose++;
         console.log(lose);
         alert("you lose!");
+        guessLeft--;
 
     }
-
-
+wins.textContent = "Wins: "+ win;
+loses.textContent = "Loses: "+ lose;
+yourLeft.textContent ="Guess Left: "+ guessLeft;
 }
 
